@@ -17,7 +17,7 @@ jobs:
 
       # Novo Passo 2: Instalar todas as dependências (incluindo o @eslint/js)
       - name: Instalar dependências do projeto
-        run: npm ci
+        run: npm ci --legacy-peer-deps
 
       # Novo Passo 3: Executar o linter para validar o código antes do Docker
       - name: Executar Linter
